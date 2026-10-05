@@ -1,0 +1,16 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+<script>
+  /* global p5 */
+  const sketch = (p) => {
+    p.setup = () => {
+      p.createCanvas(1000, 1000)
+      p.background(200, 3, 50)
+    }
+
+    p.draw = () => {
+      p.fill(2, 30, 2)
+      p.ellipse(p.mouseX, p.mouseY, 45, 12)
+    }
+  }
+  new p5(sketch)
+</script>
